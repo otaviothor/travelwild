@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.dropdown-content {
+  width: 190px !important;
+}
+
+.section-search input {
+  padding: 5px !important;
+  font-size: 18px !important;
+  width: 90% !important;
+  border: #f4f4f4 3px solid !important;
+}
+
+.section-follow .fa-4x {
+  margin: 5px 10px;
+}
+
+/* css - modal login/register */
+.modal {
+  height: 90% !important;
+  overflow: hidden;
+}
+
+.iwrapper {
+  width: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.rotate {
+  transform: rotateY(180deg);
+}
+
+.rotateb {
+  transform: rotateY(0deg);
+  z-index: 3;
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+  margin-top: -15px !important;
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  transform: rotateY(180deg);
+  z-index: 1;
+}

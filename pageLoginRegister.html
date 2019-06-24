@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/default/materialize.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"></script>
+
+  <link rel="stylesheet" href="css/custom/loginCadastro.css">
+
+  <link rel="icon" href="img/logo.png">
+  <title>Travelville</title>
+</head>
+
+<body>
+
+  <section id="secao01" class="secao">
+    <div class="row">
+      <div class="col s12 m5 offset-m7 divForms">
+        <form class="formLogin" action="index.html" method="post">
+          <h3>Logar</h3>
+          <div class="input-field">
+            <input name="emailLogin" type="email" placeholder="Email">
+          </div>
+          <div class="input-field inputLogar right-align">
+            <input name="senhaLogin" type="password" placeholder="Senha">
+            <a href="">Esqueci minha senha</a>
+          </div>
+          <div class="input-field inputLogar center-align">
+            <button class="btn waves-effect waves-light teal" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+          <div class="input-field inputLogar right-align">
+            <span>Não possui conta ? <a class="sectionRollForm">Cadastre - se</a></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="secao02" class="secao">
+    <div class="row">
+      <div class="col s12 m5 offset-m7 divForms">
+        <form class="formCadastro" action="index.html" method="post">
+          <h3>Cadastre - se </h3>
+          <div class="input-field">
+            <input name="nomeCadastro" type="text" placeholder="Nome">
+          </div>
+          <div class="input-field inputCadastro">
+            <input name="emailCadastro" type="email" placeholder="Email">
+          </div>
+          <div class="input-field inputCadastro">
+            <input name="senhaCadastro" type="password" placeholder="Senha">
+          </div>
+          <div class="input-field inputCadastro">
+            <input name="conSenhaCadastro" type="password" placeholder="Confirme sua senha">
+          </div>
+          <div class="input-field inputCadastro center-align">
+            <button class="btn waves-effect waves-light teal" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+          <div class="input-field inputCadastro right-align">
+            <span>Já possui uma conta ? <a class="sectionRollForm">Logar</a></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/default/materialize.min.js"></script>
+  <script src="js/default/jquery.min.js"></script>
+  <script src="js/custom/loginCadastro.js"></script>
+
+</body>
+
+</html>
