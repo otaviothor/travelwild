@@ -8,7 +8,7 @@
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/default/materialize.min.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
 
   <link rel="stylesheet" href="css/custom/loginCadastro.css">
 
@@ -18,55 +18,63 @@
 
 <body>
 
-  <section id="secao01" class="secao">
-    <div class="row">
+  <section id="secao01">
+    <div class="row ">
       <div class="col s12 m5 offset-m7 divForms">
         <form class="formLogin" action="index.html" method="post">
-          <h3>Logar</h3>
-          <div class="input-field">
-            <input name="emailLogin" type="email" placeholder="Email">
+          <div class="input- center-align">
+            <i class="fas fa-user-check iconUsersLogin"></i>
+            <!-- <img src="img/user.png" class="imgUser" alt=""> -->
+          </div>
+          <!-- <h3>Logar</h3> -->
+          <div class="input-field inputLogar">
+            <input name="emailLogin" type="email" placeholder="Email" class="white-text">
           </div>
           <div class="input-field inputLogar right-align">
-            <input name="senhaLogin" type="password" placeholder="Senha">
-            <a href="">Esqueci minha senha</a>
+            <input name="senhaLogin" type="password" placeholder="Senha" class="white-text">
+            <a href="" class="sectionRollForm">Esqueci minha senha</a>
           </div>
           <div class="input-field inputLogar center-align">
-            <button class="btn waves-effect waves-light teal" type="submit" name="action">Submit
-              <i class="material-icons right">send</i>
+            <button class="btn waves-effect waves-light grey darken-4" type="submit" name="action">Logar
+              <i class="material-icons right">done</i>
             </button>
           </div>
           <div class="input-field inputLogar right-align">
-            <span>Não possui conta ? <a class="sectionRollForm">Cadastre - se</a></span>
+            <span class="white-text">Não possui conta ? <a href="#secao02" class="sectionRollForm">Cadastre - se</a></span>
           </div>
         </form>
       </div>
     </div>
   </section>
 
-  <section id="secao02" class="secao">
+  <section id="secao02">
     <div class="row">
       <div class="col s12 m5 offset-m7 divForms">
         <form class="formCadastro" action="index.html" method="post">
-          <h3>Cadastre - se </h3>
-          <div class="input-field">
-            <input name="nomeCadastro" type="text" placeholder="Nome">
+          <div class="input- center-align">
+            <i class="fas fa-user-plus iconUsersLogin"></i>
+            <!-- <img src="img/create.png" class="imgUser" alt=""> -->
+          </div>
+          <!-- <h3>Cadastre - se </h3> -->
+          <div class="input-field inputCadastro">
+            <input name="emailCadastro" type="email" placeholder="Email" class="white-text">
+            <span class="helper-text"></span>
           </div>
           <div class="input-field inputCadastro">
-            <input name="emailCadastro" type="email" placeholder="Email">
+            <input name="senhaCadastro" id="senha" type="password" placeholder="Senha" class="white-text" onchange="contagemCarac()">
+            <span class="helper-text"></span>
           </div>
           <div class="input-field inputCadastro">
-            <input name="senhaCadastro" type="password" placeholder="Senha">
-          </div>
-          <div class="input-field inputCadastro">
-            <input name="conSenhaCadastro" type="password" placeholder="Confirme sua senha">
+            <input name="conSenhaCadastro" id="confsenha" type="password" placeholder="Confirme sua senha" class="white-text">
+            <span class="helper-text" id="spanSenha"></span>
           </div>
           <div class="input-field inputCadastro center-align">
-            <button class="btn waves-effect waves-light teal" type="submit" name="action">Submit
-              <i class="material-icons right">send</i>
+            <button class="btn waves-effect waves-light grey darken-4" type="submit" name="action">Cadastrar
+              <i class="material-icons right">add</i>
             </button>
           </div>
           <div class="input-field inputCadastro right-align">
-            <span>Já possui uma conta ? <a class="sectionRollForm">Logar</a></span>
+            <span class="white-text">Já possui uma conta ? <a href="#secao01" class="sectionRollForm">Logar</a></span>
           </div>
         </form>
       </div>

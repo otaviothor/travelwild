@@ -4,8 +4,16 @@ body {
   font-family: 'Montserrat', sans-serif !important;
 }
 
+.logoMenu{
+  height: 50px;
+}
+
 .dropdown-content {
   width: 190px !important;
+}
+
+.sidenav a, .dropdown-content a{
+  color: #424242 !important;
 }
 
 .section-search input {
@@ -15,44 +23,35 @@ body {
   border: #f4f4f4 3px solid !important;
 }
 
-.section-follow .fa-4x {
-  margin: 5px 10px;
+.section-follow .fa-3x {
+  transition: 0.2s;
+  margin: 5px 25px;
 }
 
-/* css - modal login/register */
-.modal {
-  height: 90% !important;
-  overflow: hidden;
+.fa-facebook:hover {
+  transition: 0.2s;
+  transform: scale(1.09);
+  color: #3C5A99;
+
 }
 
-.iwrapper {
-  width: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
+.fa-twitter:hover {
+  transition: 0.2s;
+  transform: scale(1.09);
+  color: #1DA1F2;
 }
 
-.rotate {
-  transform: rotateY(180deg);
+.fa-instagram:hover {
+  transition: 0.2s;
+  transform: scale(1.09);
+  color: #000;
 }
 
-.rotateb {
-  transform: rotateY(0deg);
-  z-index: 3;
+.cardZoom{
+  transition: 0.2s;
 }
 
-.front, .back {
-  position: absolute;
-  width: 100%;
-  backface-visibility: hidden;
-  margin-top: -15px !important;
-}
-
-.front {
-  z-index: 2;
-}
-
-.back {
-  transform: rotateY(180deg);
-  z-index: 1;
+.cardZoom:hover{
+  transition: 0.2s;
+  transform: scale(1.04);
 }

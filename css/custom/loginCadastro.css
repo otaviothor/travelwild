@@ -1,26 +1,55 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif !important;
-  background: url(../../img/travel4.jpg);
+  background: url(../../img/nature.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .divForms {
-  background-color: rgba(255, 255, 255, 0.8) !important;
+  background-color: rgba(66, 66, 66, 0.7) !important;
   padding: 50px !important;
 }
 
-.inputLogar {
-  margin-top: 80px;
+.iconUsersLogin{
+  font-size: 200px;
+  color: #fff;
 }
 
-.inputCadastro{
-  margin-top: 40px;
+/* .imgUser{
+  height: 190px;
+  width: 190px;
+} */
+
+.sectionRollForm {
+  cursor: pointer;
+}
+
+.sectionRollForm:hover {
+  text-decoration: underline;
+}
+
+.inputLogar {
+  margin-top: 50px;
+}
+
+.inputCadastro {
+  margin-top: 23px;
+}
+
+@media screen and (max-width: 360) {
+  .iconUsersLogin{
+    font-size: 150px;
+    color: #fff;
+  }
 }

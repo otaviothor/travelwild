@@ -1,24 +1,19 @@
-// altura da div que esta o forms
+// altura da tela
 var _AlturaDocumento = $(window).height();
 
 function AlturaSecao() {
   $('.divForms').height(_AlturaDocumento);
 }
 
-// rolagem por sessao
-function ScrollSecao() {
-  var body = $('html, body');
-  if ($(this).parent('.secao').is('#secao01')) {
-    //verifica se está na primeira seção e rola para a segunda
-    body.animate({
-      scrollTop: _AlturaDocumento
-    }, '500');
-  } else if ($(this).parent('.secao').is('#secao02')) {
-    //rola para o início da página
-    body.animate({
-      scrollTop: 0
-    }, '800');
+$(AlturaSecao);
+
+// verifica a quantidade de caracteres no campo senha do cadastro
+function contagemCarac() {
+  var x = document.getElementById("senha").value;
+  var n = x.length;
+  if (n < 8) {
+    document.getElementById('spanSenha').innerHTML = "A senha deve conter no mínimo 8 caracteres.";
+  } else {
+    document.getElementById('spanSenha').innerHTML = "";
   }
 }
-$('.sectionRollForm').click(ScrollSecao); //chama a função na ação de click no ícone
-$(AlturaSecao); //chama a nossa função só depois que o documento estiver completamente carregado

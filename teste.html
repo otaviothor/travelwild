@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>.: André Felizardo - Página com Seção :.</title>
+</head>
+
+<body>
+  <div id="secao-01" class="secao">
+    <span class="icone-scroll">
+      <span class="scroll-next scroll"></span>
+    </span>
+  </div>
+  <div id="secao-02" class="secao">
+    <span class="icone-scroll">
+      <span class="scroll-next scroll"></span>
+    </span>
+  </div>
+  <div id="secao-03" class="secao">
+    <span class="icone-scroll">
+      <span class="scroll-next scroll"></span>
+    </span>
+  </div>
+  <div id="secao-04" class="secao">
+    <span class="icone-scroll">
+      <span class="scroll-top scroll"></span>
+      <span class="scroll-top scroll"></span>
+    </span>
+  </div>
+</body>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .secao {
+    position: relative;
+  }
+
+  #secao-01 {
+    background-color: #0B77C5;
+  }
+
+  #secao-02 {
+    background-color: #fff;
+  }
+
+  #secao-03 {
+    background-color: #000;
+  }
+
+  #secao-04 {
+    background-color: #ccc;
+  }
+
+  .icone-scroll {
+    position: absolute;
+    bottom: 3em;
+    width: 50px;
+    height: 50px;
+    background-color: #1a1a1a;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -25px;
+    cursor: pointer;
+  }
+</style>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>
+  var _AlturaDocumento = $(window).height(); //pega altura da janela
+  function AlturaSecao() {
+    $('.secao').height(_AlturaDocumento); //atribui o valor da variável a todas as divs com a classe secao
+  }
+
+  function ScrollSecao() {
+    console.log('entrou');
+    var body = $('html, body');
+    if ($(this).parent('.secao').is('#secao-01')) {
+      //verifica se está na primeira seção e rola para a segunda
+      body.animate({
+        scrollTop: _AlturaDocumento
+      }, '500');
+    } else if ($(this).parent('.secao').is('#secao-02')) {
+      //verifica se está na segunda seção e rola para a terceira
+      body.animate({
+        scrollTop: _AlturaDocumento * 2
+      }, '500');
+    } else if ($(this).parent('.secao').is('#secao-03')) {
+      //verifica se está na terceira seção e rola para a quarta
+      body.animate({
+        scrollTop: _AlturaDocumento * 3
+      }, '500');
+    } else {
+      //rola para o início da página
+      body.animate({
+        scrollTop: 0
+      }, '800');
+    }
+  }
+  $('.icone-scroll').click(ScrollSecao); //chama a função na ação de click no ícone
+  $(AlturaSecao); //chama a nossa função só depois que o documento estiver completamente carregado
+</script>
+
+</html>

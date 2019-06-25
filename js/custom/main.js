@@ -1,3 +1,6 @@
+// altura da tela
+var _AlturaDocumento = $(window).height();
+
 // Sidenav
 const sideNav = document.querySelector('.sidenav');
 M.Sidenav.init(sideNav, {});
@@ -6,7 +9,7 @@ M.Sidenav.init(sideNav, {});
 const slider = document.querySelector('.slider');
 M.Slider.init(slider, {
   indicators: false,
-  height: 500,
+  height: _AlturaDocumento,
   transition: 500,
   interval: 6000
 });
