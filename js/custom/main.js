@@ -81,3 +81,8 @@ $("#mensagemContato").keyup(function() {
     $("#spanMensagemContato").html(null);
   }
 });
+
+// mascara de telefone
+$(document).ready(function(){
+  $('#telefoneContato').mask('(99) 99999-9999');
+});
