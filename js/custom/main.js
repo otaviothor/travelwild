@@ -68,3 +68,16 @@ $(document).ready(function() {
     $("#iwp").addClass("rotateb");
   });
 });
+
+// conta os caracteres do textarea do Contato
+$("#mensagemContato").keyup(function() {
+  var max = parseInt($("#mensagemContato").attr('maxlength'));
+  var tamanho = $('#mensagemContato').val().length;
+  var newLength = max - tamanho;
+  if (newLength > 0) {
+    $("#spanMensagemContato").html(newLength + " caracteres restantes");
+  }
+  else {
+    $("#spanMensagemContato").html(null);
+  }
+});

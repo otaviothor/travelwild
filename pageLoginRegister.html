@@ -62,14 +62,14 @@
           </div>
           <div class="input-field inputCadastro">
             <input name="senhaCadastro" id="senha" type="password" placeholder="Senha" class="white-text" onchange="contagemCarac()">
-            <span class="helper-text"></span>
+            <span class="helper-text red-text" id="spanSenha"></span>
           </div>
           <div class="input-field inputCadastro">
-            <input name="conSenhaCadastro" id="confsenha" type="password" placeholder="Confirme sua senha" class="white-text">
-            <span class="helper-text" id="spanSenha"></span>
+            <input name="conSenhaCadastro" id="confsenha" type="password" placeholder="Confirme sua senha" class="white-text" disabled>
+            <span class="helper-text red-text" id="spanConfSenha"></span>
           </div>
           <div class="input-field inputCadastro center-align">
-            <button class="btn waves-effect waves-light grey darken-4" type="submit" name="action">Cadastrar
+            <button class="btn waves-effect waves-light grey darken-4" id="btnCadastro" type="submit" name="action" disabled>Cadastrar
               <i class="material-icons right">add</i>
             </button>
           </div>
