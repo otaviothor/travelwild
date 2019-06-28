@@ -1,5 +1,6 @@
 // altura da tela
 var _AlturaDocumento = $(window).height();
+var menuHeight = $(".navbar-fixed").height();
 
 // Sidenav
 const sideNav = document.querySelector('.sidenav');
@@ -9,7 +10,7 @@ M.Sidenav.init(sideNav, {});
 const slider = document.querySelector('.slider');
 M.Slider.init(slider, {
   indicators: false,
-  height: _AlturaDocumento,
+  height: _AlturaDocumento - menuHeight,
   transition: 500,
   interval: 6000
 });
@@ -76,6 +77,9 @@ $("#mensagemContato").keyup(function() {
   var newLength = max - tamanho;
   if (newLength > 0) {
     $("#spanMensagemContato").html(newLength + " caracteres restantes");
+  }
+  else if (newLength == 0) {
+    $("#spanMensagemContato").html(null);
   }
   else {
     $("#spanMensagemContato").html(null);
