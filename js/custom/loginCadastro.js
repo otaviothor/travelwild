@@ -2,7 +2,8 @@
 var _AlturaDocumento = $(window).height();
 
 function AlturaSecao() {
-  $('.divForms').height(_AlturaDocumento);
+  $('.divFormsCadastro').height(_AlturaDocumento);
+  $('.divFormsLogin').height(_AlturaDocumento - 80);
 }
 
 $(AlturaSecao);
