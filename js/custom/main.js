@@ -1,6 +1,7 @@
 // altura da tela
 var _AlturaDocumento = $(window).height();
 var menuHeight = $(".navbar-fixed").height();
+$('.iconLogoMenu').height(menuHeight);
 
 // Sidenav
 const sideNav = document.querySelector('.sidenav');
