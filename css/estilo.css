@@ -1,13 +1,5 @@
-.logoMenu {
-  height: 50px;
-}
-
 .dropdown-content {
   width: 190px !important;
-}
-
-.btn-flat{
-  
 }
 
 .sidenav a, .dropdown-content a {
@@ -19,11 +11,18 @@
   font-size: 18px !important;
   width: 90% !important;
   border: #f4f4f4 3px solid !important;
+  transition: 0.2s !important;
+}
+
+.section-search input:focus {
+  width: 95% !important;
+  transition: 0.2s;
 }
 
 .section-follow .fa-3x {
   transition: 0.2s;
   margin: 5px 25px;
+  color: #000;
 }
 
 .fa-facebook:hover {
@@ -51,4 +50,12 @@
 .cardZoom:hover {
   transition: 0.2s;
   transform: scale(1.04);
+}
+
+.linkAzul {
+  cursor: pointer;
+}
+
+.linkAzul:hover {
+  text-decoration: underline;
 }

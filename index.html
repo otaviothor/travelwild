@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">
   <script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
 
-  <link rel="stylesheet" href="css/custom/estilo.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/default.css">
 
   <link rel="icon" href="img/logo.png">
   <title>TravelWild</title>
@@ -22,22 +23,22 @@
     <nav class="grey darken-4">
       <div class="container">
         <div class="nav-wrapper">
-          <a href="#home" class="brand-logo"><i class="fas fa-space-shuttle"></i> TravelWild</a>
+          <a href="#home" class="brand-logo"><i class="far fa-paper-plane"></i> TravelWild</a>
           <a href="#" data-target="mobile-nav" class="sidenav-trigger">
-            <i class="material-icons">menu</i>
+            <i class="material-icons">clear_all</i>
           </a>
           <ul class="right hide-on-med-and-down">
             <li>
               <a class="dropdown-trigger" href="" data-target="menuDrop"><i class="material-icons right">clear_all</i></a>
             </li>
             <li>
-              <a href="login.html" class="btn-flat white-text">Login</a>
+              <a href="#login" class="btn-flat white-text">Login</a>
             </li>
             <li>
               <h5>/</h5>
             </li>
             <li>
-              <a href="cadastro.html" class="btn-flat white-text">Cadastro</a>
+              <a href="#cadastro" class="btn-flat white-text">Cadastro</a>
             </li>
           </ul>
           <ul id="menuDrop" class="dropdown-content">
@@ -80,40 +81,37 @@
   <section class="slider">
     <ul class="slides">
       <li>
-        <img src="img/grayscale.jpg">
-        <!-- random image -->
-        <div class="caption center-align">
+        <img src="img/1.jpeg">
+        <div class="caption center-align grey-text text-darken-4">
           <h2>Tire suas férias do sonho</h2>
-          <h5 class="grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, provident eos dicta unde debitis</h5>
+          <h5 class="hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, provident eos dicta unde debitis</h5>
         </div>
       </li>
       <li>
-        <img src="img/grayscale2.jpg">
-        <!-- random image -->
+        <img src="img/2.jpeg">
         <div class="caption left-align">
           <h2>Trabalhamos com todos os orçamentos</h2>
-          <h5 class="grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus delectus inventore neque impedit</h5>
+          <h5 class="hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus delectus inventore neque impedit</h5>
         </div>
       </li>
       <li>
-        <img src="img/grayscale3asdf.jpg">
-        <!-- random image -->
-        <div class="caption right-align">
+        <img src="img/3.jpeg">
+        <div class="caption right-align grey-text text-darken-4">
           <h2>Viagens em grupo ou individual</h2>
-          <h5 class="grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsum molestias excepturi doloremque</h5>
+          <h5 class="hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsum molestias excepturi doloremque</h5>
         </div>
       </li>
     </ul>
   </section>
 
   <!-- Section: pesquisa -->
-  <section id="pesquisa" class="section section-search grey darken-4 white-text center scrollspy">
+  <section id="pesquisa" class="section section-search grey darken-4 center scrollspy">
     <div class="container">
       <div class="row">
         <div class="col s12">
-          <h3>Pesquisar destinos</h3>
+          <h3 class="white-text">Pesquisar destinos</h3>
           <div class="input-field">
-            <input type="text" class="white grey-text autocomplete" id="autocomplete-input" placeholder="Aruba, Cancun, etc...">
+            <input type="text" class="white grey-text autocomplete" placeholder="Aruba, Cancun, etc...">
           </div>
         </div>
       </div>
@@ -121,26 +119,26 @@
   </section>
 
   <!-- Section: Icon Boxes -->
-  <section class="section section-icons grey lighten-4 center">
+  <section class="section section-icons center grey lighten-3">
     <div class="container">
       <div class="row">
         <div class="col s12 m4">
-          <div class="card-panel z-depth-3 cardZoom">
-            <i class="material-icons large  grey-text text-darken-4">room</i>
+          <div class="card-panel z-depth-3 cardZoom grey-text text-darken-4">
+            <i class="material-icons large">room</i>
             <h5>Escolha onde</h5>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, tempore?</p>
           </div>
         </div>
         <div class="col s12 m4">
-          <div class="card-panel z-depth-3 cardZoom">
-            <i class="material-icons large  grey-text text-darken-4">store</i>
+          <div class="card-panel z-depth-3 cardZoom grey-text text-darken-4">
+            <i class="material-icons large">store</i>
             <h5>Loja de viagem</h5>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, tempore?</p>
           </div>
         </div>
         <div class="col s12 m4">
-          <div class="card-panel z-depth-3 cardZoom">
-            <i class="material-icons large grey-text text-darken-4">airplanemode_active</i>
+          <div class="card-panel z-depth-3 cardZoom grey-text text-darken-4">
+            <i class="material-icons large">airplanemode_active</i>
             <h5>Voar barato</h5>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, tempore?</p>
           </div>
@@ -153,37 +151,37 @@
   <section id="lugares" class="section section-popular scrollspy">
     <div class="container">
       <div class="row">
-        <h4 class="center grey-text text-darken-4">Lugares populares</h4>
+        <h3 class="center grey-text text-darken-4">Lugares populares</h3>
         <div class="col s12 m4">
-          <div class="card z-depth-3 cardZoom">
+          <div class="card z-depth-2 cardZoom">
             <div class="card-image">
-              <img src="img/norway.png" alt="">
+              <img src="https://source.unsplash.com/1600x900/?traveling">
               <span class="card-title">Noruega</span>
             </div>
-            <div class="card-content">
+            <div class="card-content grey-text text-darken-4">
               Existem cerca de 1.000 campings para se escolher na Noruega. A maioria deles oferece espaço para sua barraca,
               trailer ou motorhome, além de cabanas de todo tipo.
             </div>
           </div>
         </div>
         <div class="col s12 m4">
-          <div class="card z-depth-3 cardZoom">
+          <div class="card z-depth-2 cardZoom">
             <div class="card-image">
-              <img src="img/iceland.jpg" alt="">
+              <img src="https://source.unsplash.com/1600x900/?bridge">
               <span class="card-title">Islândia</span>
             </div>
-            <div class="card-content">
+            <div class="card-content grey-text text-darken-4">
               A Islândia possui uma diversidade absurda de atrações para um país que nem é tão grande assim.
             </div>
           </div>
         </div>
         <div class="col s12 m4">
-          <div class="card z-depth-3 cardZoom">
+          <div class="card z-depth-2 cardZoom">
             <div class="card-image">
-              <img src="img/denmark.jpg" alt="">
+              <img src="https://source.unsplash.com/1600x900/?beach, travel,boat">
               <span class="card-title">Dinamarca</span>
             </div>
-            <div class="card-content">
+            <div class="card-content grey-text text-darken-4">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta sint perferendis.
             </div>
           </div>
@@ -193,19 +191,19 @@
   </section>
 
   <!-- Section: Follow -->
-  <section class="section section-follow grey darken-4 white-text center">
+  <section class="section section-follow center grey lighten-3">
     <div class="container">
       <div class="row">
         <div class="col s12">
-          <h4>Siga a TravelWild</h4>
-          <p>Siga-nos em nossas redes sociais para ver ofertas especiais</p>
-          <a href="#" class="white-text">
+          <h3 class="grey-text text-darken-4">Siga a TravelWild</h3>
+          <p class="grey-text text-darken-4">Siga-nos em nossas redes sociais para ver ofertas especiais</p>
+          <a href="#">
             <i class="fab fa-facebook fa-3x"></i>
           </a>
-          <a href="#" class="white-text">
+          <a href="#">
             <i class="fab fa-twitter fa-3x"></i>
           </a>
-          <a href="#" class="white-text">
+          <a href="#">
             <i class="fab fa-instagram fa-3x"></i>
           </a>
         </div>
@@ -214,9 +212,9 @@
   </section>
 
   <!-- Section: galeria -->
-  <section id="galeria" class="section section-gallery grey lighten-4 scrollspy">
+  <section id="galeria" class="section section-gallery grey darken-4 scrollspy">
     <div class="container">
-      <h4 class="center grey-text text-darken-4">Galeria de fotos</h4>
+      <h3 class="center white-text">Galeria de fotos</h3>
       <div class="row">
         <div class="col s12 m3">
           <img src="https://source.unsplash.com/1600x900/?beach" alt="" class="materialboxed responsive-img">
@@ -269,7 +267,7 @@
     <div class="container">
       <div class="row">
         <div class="col s12 m6">
-          <div class="card-panel  grey darken-4 white-text center z-depth-3">
+          <div class="card-panel grey darken-4 white-text center z-depth-3">
             <i class="material-icons">email</i>
             <h4>Contate - nos</h4>
             <p>Envie uma mensagem para realizar reservas, ou se possui alguma dúvida ou sugestão que iremos recebe - lá e responde - lá.</p>
@@ -285,7 +283,7 @@
         </div>
         <form class="" action="" method="post">
           <div class="col s12 m6">
-            <div class="card-panel grey lighten-4 z-depth-3">
+            <div class="card-panel grey lighten-3 z-depth-3">
               <h5>Por favor preencha este formulário</h5>
               <div class="input-field">
                 <input type="text" placeholder="Nome">
@@ -300,10 +298,64 @@
                 <textarea class="materialize-textarea" id="mensagemContato" placeholder="Escreva sua mensagem" maxlength="120"></textarea>
                 <span class="helper-text red-text" id="spanMensagemContato"></span>
               </div>
-              <div class="input-field right-align">
-                <button class="btn waves-effect waves-light grey darken-4" type="submit" name="action">Enviar
-                </button>
-              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: login -->
+  <section id="login" class="section section-login grey lighten-3 scrollspy">
+    <div class="container">
+      <div class="row">
+        <form class="" action="" method="post">
+          <div class="col s12">
+            <h3 class="grey-text text-darken-4">Logar</h3>
+            <div class="input-field inputLogar">
+              <input name="emailLogin" type="email" placeholder="Email" class="grey-text text-darken-4">
+            </div>
+            <div class="input-field inputLogar right-align">
+              <input name="senhaLogin" type="password" placeholder="Senha" class="grey-text text-darken-4">
+              <a href="" class="linkAzul">Esqueci minha senha</a>
+            </div>
+            <div class="input-field inputLogar center-align">
+              <button class="btn waves-effect waves-light grey darken-4" type="submit" name="action">Logar
+                <i class="material-icons right">done</i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: cadastro -->
+  <section id="cadastro" class="section section-register scrollspy">
+    <div class="container">
+      <div class="row">
+        <form class="" action="" method="post">
+          <div class="col s12">
+            <h3 class="grey-text text-darken-4">Cadastre - se</h3>
+            <div class="input-field inputLogar">
+              <input name="emailCadastro" type="email" placeholder="Email" class="grey-text text-darken-4">
+              <span class="helper-text"></span>
+            </div>
+            <div class="input-field inputLogar right-align">
+              <input name="senhaCadastro" id="senha" type="password" placeholder="Senha" class="grey-text text-darken-4">
+              <span class="helper-text red-text" id="spanSenha"></span>
+            </div>
+            <div class="input-field inputLogar right-align">
+              <input name="conSenhaCadastro" id="confsenha" type="password" placeholder="Confirme sua senha" class="grey-text text-darken-4" disabled>
+              <span class="helper-text red-text" id="spanConfSenha"></span>
+            </div>
+            <div class="input-field inputLogar center-align">
+              <button class="btn waves-effect waves-light grey darken-4" id="btnCadastro" type="submit" name="action" disabled>Cadastrar
+                <i class="material-icons right">add</i>
+              </button>
+            </div>
+            <div class="input-field inputLogar right-align">
+              <span class="grey-text text-darken-4">Já possui uma conta ? <a href="#login" class="linkAzul">Logar</a></span>
             </div>
           </div>
         </form>
@@ -321,8 +373,8 @@
 
   <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="js/default/jquery.mask.min.js"></script>
-  <script src="js/custom/main.js"></script>
+  <script src="node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 
