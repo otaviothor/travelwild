@@ -32,13 +32,7 @@
               <a class="dropdown-trigger" href="" data-target="menuDrop"><i class="material-icons right">clear_all</i></a>
             </li>
             <li>
-              <a href="#login" class="btn-flat white-text">Login</a>
-            </li>
-            <li>
-              <h5>/</h5>
-            </li>
-            <li>
-              <a href="#cadastro" class="btn-flat white-text">Cadastro</a>
+              <a href="#logincadastro" class="btn-flat btn-default transparent">Login/Cadastro</a>
             </li>
           </ul>
           <ul id="menuDrop" class="dropdown-content">
@@ -73,7 +67,7 @@
       <a href="#contato">Contato</a>
     </li>
     <li>
-      <a href="cadastro.html"></i>Login/Cadastro</a>
+      <a href="logincadastro"></i>Login/Cadastro</a>
     </li>
   </ul>
 
@@ -263,7 +257,7 @@
   </section>
 
   <!-- Section: contato -->
-  <section id="contato" class="section section-contact scrollspy">
+  <section id="contato" class="section section-contact grey lighten-3 scrollspy">
     <div class="container">
       <div class="row">
         <div class="col s12 m6">
@@ -281,9 +275,9 @@
             <li class="collection-item">São Paulo - SP</li>
           </ul>
         </div>
-        <form class="" action="" method="post">
-          <div class="col s12 m6">
-            <div class="card-panel grey lighten-3 z-depth-3">
+        <div class="col s12 m6">
+          <div class="card-panel z-depth-3">
+            <form class="" action="" method="post">
               <h5>Por favor preencha este formulário</h5>
               <div class="input-field">
                 <input type="text" placeholder="Nome">
@@ -298,67 +292,60 @@
                 <textarea class="materialize-textarea" id="mensagemContato" placeholder="Escreva sua mensagem" maxlength="120"></textarea>
                 <span class="helper-text red-text" id="spanMensagemContato"></span>
               </div>
-            </div>
+            </form>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Section: login -->
-  <section id="login" class="section section-login grey lighten-3 scrollspy">
+  <section id="logincadastro" class="section section-login scrollspy">
     <div class="container">
       <div class="row">
-        <form class="" action="" method="post">
-          <div class="col s12">
-            <h3 class="grey-text text-darken-4">Logar</h3>
-            <div class="input-field inputLogar">
-              <input name="emailLogin" type="email" placeholder="Email" class="grey-text text-darken-4">
-            </div>
-            <div class="input-field inputLogar right-align">
-              <input name="senhaLogin" type="password" placeholder="Senha" class="grey-text text-darken-4">
-              <a href="" class="linkAzul">Esqueci minha senha</a>
-            </div>
-            <div class="input-field inputLogar center-align">
-              <button class="btn waves-effect waves-light grey darken-4" type="submit" name="action">Logar
-                <i class="material-icons right">done</i>
-              </button>
-            </div>
+        <div class="col s12 m6">
+          <div class="card-panel z-depth-3">
+            <form class="" action="" method="post">
+              <h3 class="center-align grey-text text-darken-4">Logar</h3>
+              <div class="input-field">
+                <input name="emailLogin" type="email" placeholder="Email" class="grey-text text-darken-4">
+              </div>
+              <div class="input-field right-align">
+                <input name="senhaLogin" type="password" placeholder="Senha" class="grey-text text-darken-4">
+                <a href="" class="linkAzul">Esqueci minha senha</a>
+              </div>
+              <div class="input-field center-align">
+                <button class="btn waves-effect waves-light grey darken-4" type="submit" name="action">Logar
+                  <i class="material-icons right">done</i>
+                </button>
+              </div>
+            </form>
           </div>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section: cadastro -->
-  <section id="cadastro" class="section section-register scrollspy">
-    <div class="container">
-      <div class="row">
-        <form class="" action="" method="post">
-          <div class="col s12">
-            <h3 class="grey-text text-darken-4">Cadastre - se</h3>
-            <div class="input-field inputLogar">
-              <input name="emailCadastro" type="email" placeholder="Email" class="grey-text text-darken-4">
-              <span class="helper-text"></span>
-            </div>
-            <div class="input-field inputLogar right-align">
-              <input name="senhaCadastro" id="senha" type="password" placeholder="Senha" class="grey-text text-darken-4">
-              <span class="helper-text red-text" id="spanSenha"></span>
-            </div>
-            <div class="input-field inputLogar right-align">
-              <input name="conSenhaCadastro" id="confsenha" type="password" placeholder="Confirme sua senha" class="grey-text text-darken-4" disabled>
-              <span class="helper-text red-text" id="spanConfSenha"></span>
-            </div>
-            <div class="input-field inputLogar center-align">
-              <button class="btn waves-effect waves-light grey darken-4" id="btnCadastro" type="submit" name="action" disabled>Cadastrar
-                <i class="material-icons right">add</i>
-              </button>
-            </div>
-            <div class="input-field inputLogar right-align">
-              <span class="grey-text text-darken-4">Já possui uma conta ? <a href="#login" class="linkAzul">Logar</a></span>
-            </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card-panel z-depth-3 grey darken-4">
+            <form class="" action="" method="post">
+              <h3 class="center-align white-text">Cadastre - se</h3>
+              <div class="input-field">
+                <input name="emailCadastro" type="email" placeholder="Email" class="white-text">
+                <span class="helper-text"></span>
+              </div>
+              <div class="input-field right-align">
+                <input name="senhaCadastro" id="senha" type="password" placeholder="Senha" class="white-text">
+                <span class="helper-text red-text" id="spanSenha"></span>
+              </div>
+              <div class="input-field right-align">
+                <input name="conSenhaCadastro" id="confsenha" type="password" placeholder="Confirme sua senha" class="white-text" disabled>
+                <span class="helper-text red-text" id="spanConfSenha"></span>
+              </div>
+              <div class="input-field center-align">
+                <button class="btn waves-effect waves-light white grey-text text-darken-4" id="btnCadastro" type="submit" name="action" disabled>Cadastrar
+                  <i class="material-icons right">add</i>
+                </button>
+              </div>
+            </form>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   </section>

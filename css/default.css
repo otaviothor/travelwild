@@ -5,3 +5,29 @@ body {
   padding: 0;
   font-family: 'Montserrat', sans-serif !important;
 }
+
+.btn-default {
+  background-color: #212121;
+  color: #fff;
+  text-transform: inherit;
+  transition: 0.2s !important;
+}
+
+.btn-default:hover {
+  transform: scale(1);
+}
+
+.btn-default:after {
+  border-radius: 1px;
+  border-top: 3px solid #fff;
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: 1px;
+  left: 0;
+  transition: right .2s cubic-bezier(0, .5, 0, .5);
+}
+
+.btn-default:hover:after {
+  right: 0;
+}
