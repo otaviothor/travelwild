@@ -1,24 +1,3 @@
-.dropdown-content {
-  width: 190px !important;
-}
-
-.sidenav a, .dropdown-content a {
-  color: #424242 !important;
-}
-
-.section-search input {
-  padding: 5px !important;
-  font-size: 18px !important;
-  width: 90% !important;
-  border: #f4f4f4 3px solid !important;
-  transition: 0.2s !important;
-}
-
-.section-search input:focus {
-  width: 95% !important;
-  transition: 0.2s;
-}
-
 .section-follow .fa-3x {
   transition: 0.2s;
   margin: 5px 25px;
@@ -41,21 +20,4 @@
   transition: 0.2s;
   transform: scale(1.09);
   color: #405DE6;
-}
-
-.cardZoom {
-  transition: 0.2s;
-}
-
-.cardZoom:hover {
-  transition: 0.2s;
-  transform: scale(1.04);
-}
-
-.linkAzul {
-  cursor: pointer;
-}
-
-.linkAzul:hover {
-  text-decoration: underline;
 }

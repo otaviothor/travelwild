@@ -6,28 +6,102 @@ body {
   font-family: 'Montserrat', sans-serif !important;
 }
 
-.btn-default {
-  background-color: #212121;
-  color: #fff;
+.btn{
+  text-transform: inherit !important;
+}
+
+.btn-flat {
+  transition: 0.2s;
   text-transform: inherit;
-  transition: 0.2s !important;
 }
 
-.btn-default:hover {
-  transform: scale(1);
+.btn-flat:focus {
+  background-color: transparent;
 }
 
-.btn-default:after {
-  border-radius: 1px;
-  border-top: 3px solid #fff;
-  content: "";
-  position: absolute;
-  right: 100%;
-  bottom: 1px;
-  left: 0;
-  transition: right .2s cubic-bezier(0, .5, 0, .5);
+.btnLight {
+  text-transform: inherit;
+  border: 0.5px solid #fff;
+  color: #fff;
 }
 
-.btn-default:hover:after {
-  right: 0;
+.btnLight:hover {
+  background: #fff;
+  color: #212121;
+}
+
+.btnLightGrey {
+  text-transform: inherit;
+  border: 0.5px solid #fff;
+  color: #fff;
+}
+
+.btnLightGrey:hover {
+  background: #fff;
+  color: #212121;
+}
+
+.btnTextLight {
+  text-transform: inherit;
+  color: #fff;
+}
+
+.btnTextLight:hover {
+  background: #fff;
+  color: #212121;
+}
+
+.btnDark {
+  text-transform: inherit;
+  border: 0.5px solid #212121;
+  color: #212121;
+}
+
+.btnDark:hover {
+  background: #212121;
+  color: #fff;
+}
+
+.btnDarkFill {
+  text-transform: inherit;
+  background: #212121;
+  border: 0.5px solid #212121;
+  color: #fff;
+}
+
+.btnDarkFill:hover {
+  background: transparent;
+  color: #212121;
+}
+
+.btnBlock {
+  width: 100%;
+}
+
+.inputLight,
+.inputLight::placeholder {
+  color: #fff !important;
+}
+
+.inputLight:focus {
+  border-bottom: 1px solid #fff !important;
+  box-shadow: 0 1px 0 0 #fff !important;
+}
+
+.inputDark,
+.inputDark::placeholder {
+  color: #212121 !important;
+}
+
+.inputDark:focus {
+  border-bottom: 1px solid #212121 !important;
+  box-shadow: 0 1px 0 0 #212121 !important;
+}
+
+.btnVerSenha {
+  margin-right: 15px;
+  position: relative;
+  margin-top: -40px !important;
+  z-index: 5;
+  cursor: pointer;
 }

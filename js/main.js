@@ -1,3 +1,15 @@
+// const axios = require('axios')
+
+axios.get('https://raw.githubusercontent.com/cristianoascari/paises-no-formato-JSON/master/countriesJson_ptBR.json')
+  .then((response) => {
+    const mapCountries = response.data.map(dt => { return dt });
+    
+    initAutoComplete(mapCountries)
+  })
+  .catch((error) => {
+    console.log(error)
+  })
+
 // altura da tela
 var _AlturaDocumento = $(window).height();
 var menuHeight = $(".navbar-fixed").height();
@@ -17,18 +29,20 @@ M.Slider.init(slider, {
 });
 
 // Autocomplete
-const ac = document.querySelector('.autocomplete');
-M.Autocomplete.init(ac, {
-  data: {
-    "Aruba": null,
-    "Cancun Mexico": null,
-    "Hawaii": null,
-    "Florida": null,
-    "California": null,
-    "Jamaica": null,
-    "Europe": null,
-  }
-});
+function initAutoComplete(dt) {
+  
+  var arrCountries = []
+  arrCountries = arrCountries.concat(dt.map(x => { return JSON.parse(`"${x.nome}": null`) }))
+
+  console.log(arrCountries);
+  
+  
+  
+  const ac = document.querySelector('.autocomplete');
+  M.Autocomplete.init(ac, {
+    data: {}
+  });
+}
 
 // Material Boxed
 const mb = document.querySelectorAll('.materialboxed');
@@ -92,3 +106,20 @@ $("#confsenha").keyup(function() {
     $('#btnCadastro').prop('disabled', false);
   }
 });
+
+
+// function pra alternar entre o login e o recuperar senha
+$('.toggleLogin').click(() => {
+  $('.formRecuperarSenha').toggleClass('hide')
+  $('.formLogin').toggleClass('hide')
+})
+
+// muda o tipo do campo password pra text
+function verSenha() {
+  $('.btnVerSenha').toggleClass("fa-eye fa-eye-slash");
+  if ($('.inputSenha').attr("type") == "password") {
+    $('.inputSenha').attr("type", "text")
+  } else {
+    $('.inputSenha').attr("type", "password")
+  }
+}

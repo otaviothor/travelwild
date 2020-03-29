@@ -8,8 +8,7 @@
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">
-  <script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
-
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
   <link rel="stylesheet" href="css/estilo.css">
   <link rel="stylesheet" href="css/default.css">
 
@@ -23,89 +22,60 @@
     <nav class="grey darken-4">
       <div class="container">
         <div class="nav-wrapper">
-          <a href="#home" class="brand-logo"><i class="far fa-paper-plane"></i> TravelWild</a>
-          <a href="#" data-target="mobile-nav" class="sidenav-trigger">
-            <i class="material-icons">clear_all</i>
+          <a href="#home" class="brand-logo left">
+            TravelWild
           </a>
-          <ul class="right hide-on-med-and-down">
+          <ul class="right">
             <li>
-              <a class="dropdown-trigger" href="" data-target="menuDrop"><i class="material-icons right">clear_all</i></a>
-            </li>
-            <li>
-              <a href="#logincadastro" class="btn-flat btn-default transparent">Login/Cadastro</a>
-            </li>
-          </ul>
-          <ul id="menuDrop" class="dropdown-content">
-            <li>
-              <a href="#pesquisa"></i>Pesquisa</a>
-            </li>
-            <li>
-              <a href="#lugares">Lugares Populares</a>
-            </li>
-            <li>
-              <a href="#galeria">Galeria</a>
-            </li>
-            <li>
-              <a href="#contato">Contato</a>
+              <a href="login.html" class="btn btn-flat btn-small btnTextLight">Login</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </div>
-  <ul class="sidenav" id="mobile-nav">
-    <li>
-      <a href="#pesquisa">Pesquisa</a>
-    </li>
-    <li>
-      <a href="#lugares">Lugares Populares</a>
-    </li>
-    <li>
-      <a href="#galeria">Galeria</a>
-    </li>
-    <li>
-      <a href="#contato">Contato</a>
-    </li>
-    <li>
-      <a href="logincadastro"></i>Login/Cadastro</a>
-    </li>
-  </ul>
 
   <!-- Section: Slider -->
   <section class="slider">
     <ul class="slides">
       <li>
         <img src="img/1.jpeg">
-        <div class="caption center-align grey-text text-darken-4">
+        <div class="caption grey-text text-darken-4">
           <h2>Tire suas férias do sonho</h2>
-          <h5 class="hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, provident eos dicta unde debitis</h5>
+          <h5 class="hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, provident eos
+            dicta unde debitis</h5>
         </div>
       </li>
       <li>
         <img src="img/2.jpeg">
-        <div class="caption left-align">
+        <div class="caption">
           <h2>Trabalhamos com todos os orçamentos</h2>
-          <h5 class="hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus delectus inventore neque impedit</h5>
+          <h5 class="hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus delectus
+            inventore neque impedit</h5>
         </div>
       </li>
       <li>
         <img src="img/3.jpeg">
-        <div class="caption right-align grey-text text-darken-4">
+        <div class="caption grey-text text-darken-4">
           <h2>Viagens em grupo ou individual</h2>
-          <h5 class="hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsum molestias excepturi doloremque</h5>
+          <h5 class="hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsum molestias
+            excepturi doloremque</h5>
         </div>
       </li>
     </ul>
   </section>
 
   <!-- Section: pesquisa -->
-  <section id="pesquisa" class="section section-search grey darken-4 center scrollspy">
+  <section id="pesquisa" class="section section-search grey darken-4 scrollspy">
     <div class="container">
       <div class="row">
         <div class="col s12">
-          <h3 class="white-text">Pesquisar destinos</h3>
+          <h3 class="white-text">Pesquisar destino</h3>
           <div class="input-field">
-            <input type="text" class="white grey-text autocomplete" placeholder="Aruba, Cancun, etc...">
+            <input type="text" class="inputLight autocomplete" placeholder="Aruba, Cancun, etc..." />
+          </div>
+          <div class="right">
+            <button class="btn btn-flat btnLight">Pesquisar</button>
           </div>
         </div>
       </div>
@@ -113,26 +83,26 @@
   </section>
 
   <!-- Section: Icon Boxes -->
-  <section class="section section-icons center grey lighten-3">
+  <section class="section grey lighten-3 grey-text text-darken-4">
     <div class="container">
       <div class="row">
         <div class="col s12 m4">
-          <div class="card-panel z-depth-3 cardZoom grey-text text-darken-4">
-            <i class="material-icons large">room</i>
+          <div class="card-panel z-depth-4">
+            <i class="material-icons medium">room</i>
             <h5>Escolha onde</h5>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, tempore?</p>
           </div>
         </div>
         <div class="col s12 m4">
-          <div class="card-panel z-depth-3 cardZoom grey-text text-darken-4">
-            <i class="material-icons large">store</i>
+          <div class="card-panel z-depth-4">
+            <i class="material-icons medium">store</i>
             <h5>Loja de viagem</h5>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, tempore?</p>
           </div>
         </div>
         <div class="col s12 m4">
-          <div class="card-panel z-depth-3 cardZoom grey-text text-darken-4">
-            <i class="material-icons large">airplanemode_active</i>
+          <div class="card-panel z-depth-4">
+            <i class="material-icons medium">airplanemode_active</i>
             <h5>Voar barato</h5>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, tempore?</p>
           </div>
@@ -142,41 +112,45 @@
   </section>
 
   <!-- Section: lugares Places -->
-  <section id="lugares" class="section section-popular scrollspy">
+  <section id="lugares" class="section section-popular scrollspy grey-text text-darken-4">
     <div class="container">
       <div class="row">
-        <h3 class="center grey-text text-darken-4">Lugares populares</h3>
+        <div class="col s12">
+          <h3>Lugares populares</h3>
+        </div>
         <div class="col s12 m4">
-          <div class="card z-depth-2 cardZoom">
+          <div class="card z-depth-4">
             <div class="card-image">
               <img src="https://source.unsplash.com/1600x900/?traveling">
               <span class="card-title">Noruega</span>
             </div>
-            <div class="card-content grey-text text-darken-4">
-              Existem cerca de 1.000 campings para se escolher na Noruega. A maioria deles oferece espaço para sua barraca,
+            <div class="card-content">
+              Existem cerca de 1.000 campings para se escolher na Noruega. A maioria deles oferece espaço para sua
+              barraca,
               trailer ou motorhome, além de cabanas de todo tipo.
             </div>
           </div>
         </div>
         <div class="col s12 m4">
-          <div class="card z-depth-2 cardZoom">
+          <div class="card z-depth-4">
             <div class="card-image">
               <img src="https://source.unsplash.com/1600x900/?bridge">
               <span class="card-title">Islândia</span>
             </div>
-            <div class="card-content grey-text text-darken-4">
+            <div class="card-content">
               A Islândia possui uma diversidade absurda de atrações para um país que nem é tão grande assim.
             </div>
           </div>
         </div>
         <div class="col s12 m4">
-          <div class="card z-depth-2 cardZoom">
+          <div class="card z-depth-4">
             <div class="card-image">
               <img src="https://source.unsplash.com/1600x900/?beach, travel,boat">
               <span class="card-title">Dinamarca</span>
             </div>
-            <div class="card-content grey-text text-darken-4">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta sint perferendis.
+            <div class="card-content">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta sint
+              perferendis.
             </div>
           </div>
         </div>
@@ -185,12 +159,12 @@
   </section>
 
   <!-- Section: Follow -->
-  <section class="section section-follow center grey lighten-3">
+  <section class="section section-follow center grey lighten-3 grey-text text-darken-4 z-depth-5">
     <div class="container">
       <div class="row">
         <div class="col s12">
-          <h3 class="grey-text text-darken-4">Siga a TravelWild</h3>
-          <p class="grey-text text-darken-4">Siga-nos em nossas redes sociais para ver ofertas especiais</p>
+          <h3>Siga a TravelWild</h3>
+          <p>Siga-nos em nossas redes sociais para ver ofertas especiais</p>
           <a href="#">
             <i class="fab fa-facebook fa-3x"></i>
           </a>
@@ -208,49 +182,49 @@
   <!-- Section: galeria -->
   <section id="galeria" class="section section-gallery grey darken-4 scrollspy">
     <div class="container">
-      <h3 class="center white-text">Galeria de fotos</h3>
       <div class="row">
-        <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?beach" alt="" class="materialboxed responsive-img">
+        <div class="col s12">
+          <h3 class="white-text">Galeria de fotos</h3>
         </div>
         <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?travel" alt="" class="materialboxed responsive-img">
+          <img src="https://picsum.photos/300/200" class="materialboxed responsive-img">
         </div>
         <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?nature" alt="" class="materialboxed responsive-img">
+          <img src="https://picsum.photos/300/200" class="materialboxed responsive-img">
         </div>
         <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?beach, travel" alt="" class="materialboxed responsive-img">
+          <img src="https://picsum.photos/300/200" class="materialboxed responsive-img">
+        </div>
+        <div class="col s12 m3">
+          <img src="https://picsum.photos/300/200" class="materialboxed responsive-img">
         </div>
       </div>
-
       <div class="row">
         <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?water" alt="" class="materialboxed responsive-img">
+          <img src="https://picsum.photos/300/200" class="materialboxed responsive-img">
         </div>
         <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?building" alt="" class="materialboxed responsive-img">
+          <img src="https://picsum.photos/300/200" class="materialboxed responsive-img">
         </div>
         <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?trees" alt="" class="materialboxed responsive-img">
+          <img src="https://picsum.photos/300/200" class="materialboxed responsive-img">
         </div>
         <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?cruise" alt="" class="materialboxed responsive-img">
+          <img src="https://picsum.photos/300/200" class="materialboxed responsive-img">
         </div>
       </div>
-
       <div class="row">
         <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?beaches" alt="" class="materialboxed responsive-img">
+          <img src="https://picsum.photos/300/200" class="materialboxed responsive-img">
         </div>
         <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?traveling" alt="" class="materialboxed responsive-img">
+          <img src="https://picsum.photos/300/200" class="materialboxed responsive-img">
         </div>
         <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?bridge" alt="" class="materialboxed responsive-img">
+          <img src="https://picsum.photos/300/200" class="materialboxed responsive-img">
         </div>
         <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?beach, travel,boat" alt="" class="materialboxed responsive-img">
+          <img src="https://picsum.photos/300/200" class="materialboxed responsive-img">
         </div>
       </div>
     </div>
@@ -261,12 +235,13 @@
     <div class="container">
       <div class="row">
         <div class="col s12 m6">
-          <div class="card-panel grey darken-4 white-text center z-depth-3">
-            <i class="material-icons">email</i>
+          <div class="card-panel grey darken-4 white-text z-depth-4">
+            <i class="fas fa-envelope fa-2x"></i>
             <h4>Contate - nos</h4>
-            <p>Envie uma mensagem para realizar reservas, ou se possui alguma dúvida ou sugestão que iremos recebe - lá e responde - lá.</p>
+            <p>Envie uma mensagem para realizar reservas, ou se possui alguma dúvida ou sugestão que iremos recebe - lá
+              e responde - lá.</p>
           </div>
-          <ul class="collection with-header z-depth-3">
+          <ul class="collection with-header z-depth-4">
             <li class="collection-header">
               <h4>Localização</h4>
             </li>
@@ -276,7 +251,7 @@
           </ul>
         </div>
         <div class="col s12 m6">
-          <div class="card-panel z-depth-3">
+          <div class="card-panel z-depth-4">
             <form class="" action="" method="post">
               <h5>Por favor preencha este formulário</h5>
               <div class="input-field">
@@ -286,11 +261,11 @@
                 <input type="text" placeholder="Email">
               </div>
               <div class="input-field">
-                <input type="text" id="telefoneContato" placeholder="Telefone">
+                <textarea class="materialize-textarea" id="mensagemContato" placeholder="Escreva sua mensagem"
+                  maxlength="120"></textarea>
               </div>
-              <div class="input-field">
-                <textarea class="materialize-textarea" id="mensagemContato" placeholder="Escreva sua mensagem" maxlength="120"></textarea>
-                <span class="helper-text red-text" id="spanMensagemContato"></span>
+              <div class="right-align">
+                <button class="btn btn-flat btnDark">Enviar</button>
               </div>
             </form>
           </div>
@@ -300,11 +275,11 @@
   </section>
 
   <!-- Section: login -->
-  <section id="logincadastro" class="section section-login scrollspy">
+  <!-- <section id="logincadastro" class="section section-login scrollspy">
     <div class="container">
       <div class="row">
         <div class="col s12 m6">
-          <div class="card-panel z-depth-3">
+          <div class="card-panel z-depth-4">
             <form class="" action="" method="post">
               <h3 class="center-align grey-text text-darken-4">Logar</h3>
               <div class="input-field">
@@ -323,7 +298,7 @@
           </div>
         </div>
         <div class="col s12 m6">
-          <div class="card-panel z-depth-3 grey darken-4">
+          <div class="card-panel z-depth-4 grey darken-4">
             <form class="" action="" method="post">
               <h3 class="center-align white-text">Cadastre - se</h3>
               <div class="input-field">
@@ -348,11 +323,12 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Footer -->
   <footer class="section grey darken-4 white-text center">
-    <p class="flow-text">TravelWild &copy; <script>
+    <p class="flow-text">TravelWild &copy;
+      <script>
         document.write(new Date().getFullYear());
       </script>
     </p>
@@ -361,6 +337,8 @@
   <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+  <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+  <script src="node_modules/axios/dist/axios.min.js"></script>
   <script src="js/main.js"></script>
 
 </body>
