@@ -1,0 +1,20 @@
+body{
+  background: url(../img/1.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.link:hover{
+  cursor: pointer;
+}
+
+.inputImagePreview{
+  display: flex;
+  justify-content: center;
+}
+
+.imagePreview{
+  max-height: 150px;
+}

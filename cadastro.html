@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+  <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" />
+
+  <link rel="stylesheet" href="css/cadastro.css">
+  <link rel="stylesheet" href="css/default.css">
+
+  <link rel="icon" href="img/logo.png">
+  <title>Cadastre - se</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row white-text">
+      <div class="col s12 m6 offset-m6">
+        <div class="card-panel z-depth-5 grey darken-4">
+          <a href="/"><i class="fas fa-chevron-left"></i> Voltar</a>
+          <form method="post" autocomplete="off">
+            <h4>Faça seu logon</h4>
+            <div class="input-field inputImagePreview">
+              <img class="imagePreview materialboxed" />
+            </div>
+            <div class="file-field input-field">
+              <div class="btn-flat center btnLight btnBlock">
+                <span>Selecionar foto</span>
+                <input type="file" onchange="imagePreview()" class="inputFoto" name="fotoCadastro" required>
+              </div>
+              <div class="descFoto hide">
+                <input class="file-path" type="text">
+              </div>
+            </div>
+            <div class="input-field ">
+              <input name="nome" type="text" placeholder="Nome completo" class="inputLight">
+            </div>
+            <div class="input-field ">
+              <input name="login" type="email" placeholder="Login" class="inputLight">
+            </div>
+            <div class="input-field right-align ">
+              <input name="senha" type="password" placeholder="Senha" class="inputLight inputSenha">
+              <span class="fa fa-fw fa-eye btnVerSenha right" onclick="verSenha()"></span>
+              Já tem uma conta ? <a class="link" href="/login.html">Entrar</a>
+            </div>
+            <div class="right-align">
+              <button class="btn btn-flat btnLight" type="submit" name="action">
+                Cadastrar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+  <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+  <script src="node_modules/axios/dist/axios.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

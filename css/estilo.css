@@ -7,13 +7,13 @@
 .fa-facebook:hover {
   transition: 0.2s;
   transform: scale(1.09);
-  color: #3C5A99;
+  color: #3b5998;
 }
 
 .fa-twitter:hover {
   transition: 0.2s;
   transform: scale(1.09);
-  color: #1DA1F2;
+  color: #1da1f2;
 }
 
 .fa-instagram:hover {

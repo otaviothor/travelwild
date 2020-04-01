@@ -1,19 +1,12 @@
-// const axios = require('axios')
-
 axios.get('https://raw.githubusercontent.com/cristianoascari/paises-no-formato-JSON/master/countriesJson_ptBR.json')
   .then((response) => {
     const mapCountries = response.data.map(dt => { return dt });
-    
+
     initAutoComplete(mapCountries)
   })
   .catch((error) => {
     console.log(error)
   })
-
-// altura da tela
-var _AlturaDocumento = $(window).height();
-var menuHeight = $(".navbar-fixed").height();
-$('.iconLogoMenu').height(menuHeight);
 
 // Sidenav
 const sideNav = document.querySelector('.sidenav');
@@ -23,21 +16,20 @@ M.Sidenav.init(sideNav, {});
 const slider = document.querySelector('.slider');
 M.Slider.init(slider, {
   indicators: false,
-  height: _AlturaDocumento - menuHeight,
   transition: 500,
   interval: 6000
 });
 
 // Autocomplete
 function initAutoComplete(dt) {
-  
+
   var arrCountries = []
   arrCountries = arrCountries.concat(dt.map(x => { return JSON.parse(`"${x.nome}": null`) }))
 
   console.log(arrCountries);
-  
-  
-  
+
+
+
   const ac = document.querySelector('.autocomplete');
   M.Autocomplete.init(ac, {
     data: {}
@@ -61,7 +53,7 @@ const md = document.querySelectorAll('.modal');
 M.Modal.init(md, {});
 
 // conta os caracteres do textarea do Contato
-$("#mensagemContato").keyup(function() {
+$("#mensagemContato").keyup(() => {
   var max = parseInt($("#mensagemContato").attr('maxlength'));
   var tamanho = $('#mensagemContato').val().length;
   var newLength = max - tamanho;
@@ -75,12 +67,12 @@ $("#mensagemContato").keyup(function() {
 });
 
 // mascara de telefone
-$(document).ready(function() {
+$(document).ready(() => {
   $('#telefoneContato').mask('(99) 99999-9999');
 });
 
 // verifica a quantidade de caracteres no campo senha do cadastro
-$("#senha").keyup(function() {
+$("#senha").keyup(() => {
   var tamanho = $('#senha').val().length;
   if (tamanho < 8 || tamanho > 12) {
     $("#spanSenha").html("A senha deve conter no mínimo 8 caracteres e no máximo 12");
@@ -94,7 +86,7 @@ $("#senha").keyup(function() {
 });
 
 // verifica se as senhas são iguais
-$("#confsenha").keyup(function() {
+$("#confsenha").keyup(() => {
   var senhaValue = $('#senha').val();
   var confSenhaValue = $('#confsenha').val();
   if (confSenhaValue != senhaValue) {
@@ -121,5 +113,21 @@ function verSenha() {
     $('.inputSenha').attr("type", "text")
   } else {
     $('.inputSenha').attr("type", "password")
+  }
+}
+
+// image preview
+$(".inputFoto").change(() => {
+  imagePreview(this);
+  $('.divForms').css('overflow', 'scroll')
+});
+
+function imagePreview(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    reader.onload = e => {
+      $('.imagePreview').attr('src', e.target.result);
+    };
+    reader.readAsDataURL(input.files[0]);
   }
 }
