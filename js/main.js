@@ -1,8 +1,8 @@
-axios.get('https://raw.githubusercontent.com/cristianoascari/paises-no-formato-JSON/master/countriesJson_ptBR.json')
-  .then((response) => {
-    const mapCountries = response.data.map(dt => { return dt });
+var data;
 
-    initAutoComplete(mapCountries)
+axios.get('https://raw.githubusercontent.com/otaviothor/travelwild/master/js/paises')
+  .then((response) => {
+    this.data = response.data
   })
   .catch((error) => {
     console.log(error)
@@ -21,20 +21,9 @@ M.Slider.init(slider, {
 });
 
 // Autocomplete
-function initAutoComplete(dt) {
-
-  var arrCountries = []
-  arrCountries = arrCountries.concat(dt.map(x => { return JSON.parse(`"${x.nome}": null`) }))
-
-  console.log(arrCountries);
-
-
-
-  const ac = document.querySelector('.autocomplete');
-  M.Autocomplete.init(ac, {
-    data: {}
-  });
-}
+const ac = document.querySelector('.autocomplete');
+M.Autocomplete.init(ac, {
+});
 
 // Material Boxed
 const mb = document.querySelectorAll('.materialboxed');
@@ -118,16 +107,33 @@ function verSenha() {
 
 // image preview
 $(".inputFoto").change(() => {
-  imagePreview(this);
-  $('.divForms').css('overflow', 'scroll')
+  imagePreview(this)
 });
 
-function imagePreview(input) {
+function imagePreview(input) {  
   if (input.files && input.files[0]) {
+    console.log('ok');
+    
     var reader = new FileReader();
     reader.onload = e => {
       $('.imagePreview').attr('src', e.target.result);
     };
     reader.readAsDataURL(input.files[0]);
+  }else {
+    console.error('deu ruim');
   }
 }
+
+// consulta e preenchimento do cep 
+$('.cep').blur(async () => {
+  var cep = $('.cep').val()
+  fetch(`https://viacep.com.br/ws/${cep}/json`).then(dados => {
+    dados.json().then(endereco => {
+      console.log(endereco)
+      $('.rua').val(endereco.logradouro)
+      $('.bairro').val(endereco.bairro)
+      $('.cidade').val(endereco.localidade)
+      $('.estado').val(endereco.uf)
+    })
+  })
+})

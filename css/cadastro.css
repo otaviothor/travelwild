@@ -1,5 +1,5 @@
 body{
-  background: url(../img/1.jpeg);
+  background: url(../img/nature.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,4 +17,8 @@ body{
 
 .imagePreview{
   max-height: 150px;
+}
+
+.descFoto{
+  width: 0;
 }
